@@ -29,7 +29,7 @@ Desktop views of the finished app. More, including phone views and a full fight 
 |---|---|
 | ![Main screen: two fighter boxes and the Fight button](screenshots/main-screen.png) | ![Rumble Roster: saved fighters as trading cards](screenshots/rumble-roster.png) |
 
-![Help page: how to play and a glossary of every screen](screenshots/help-page.png)
+<img src="screenshots/help-page.png" alt="Help page: how to play and a glossary of every screen" width="560">
 
 Overview
 --------
