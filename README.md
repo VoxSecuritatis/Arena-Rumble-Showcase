@@ -60,7 +60,7 @@ The frontend is plain HTML, CSS and JavaScript with no framework and no build st
         4. winner check      must equal a fighter's name exactly
         5. portraits         gpt-image-2, in parallel, one failure never fails the fight
         v
-    Browser shows the result; Rumble Roster and saved fights live in IndexedDB
+    Browser shows the result; Rumble Roster and saved fights live in Supabase (planned, Stage 15)
 
 | Decision | Reasoning |
 |---|---|
@@ -68,7 +68,7 @@ The frontend is plain HTML, CSS and JavaScript with no framework and no build st
 | Winner is matched by exact text | The page picks the winning side by string match, so a paraphrase from the model would silently pick the wrong side. |
 | The upset roll is in server code | A language model cannot roll a fair 17.5%. |
 | Rate limit counted in Upstash Redis | Vercel functions do not share memory, so an in-code counter would not work. |
-| Storage in IndexedDB with stable IDs | Roomier than `localStorage`, and cards keep their identity for records and future sync. Old `localStorage` data is copied over once and never deleted. |
+| Storage in IndexedDB with stable IDs (until Stage 15) | Roomier than `localStorage`, and cards keep their identity for records and future sync. Stage 15 replaces it with Supabase: Google sign-in, a database keyed by the user ID with Row Level Security, and portraits in file storage. Every account starts fresh with 12 starter fighters; old browser data is not imported. |
 
 Repository structure
 --------------------
@@ -147,7 +147,9 @@ A note on the characters
 A note on your data
 -------------------
 
-Your roster and saved fights are stored in your own browser, on your own device. Other browsers and devices do not see them, and clearing the browser's site data erases them. A database backend that syncs across devices is planned.
+Today (until Stage 15 is built) your roster and saved fights are stored in your own browser, on your own device: other browsers and devices do not see them, and clearing the browser's site data erases them.
+
+Once Stage 15 ships, your roster, saved fights and win/loss records will be stored online with your Google account. You sign in to play, you see the same data on every device, and other players cannot see yours. Every new account starts with 12 starter fighters, and data already in a browser is not imported.
 
 * * *
 
