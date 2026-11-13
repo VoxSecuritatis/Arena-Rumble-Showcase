@@ -23,11 +23,15 @@ Acknowledgment
 Screenshots
 -----------
 
-Desktop views of the finished app. More, including phone views and a full fight result, will be added to the [`screenshots/`](screenshots/) folder.
+Desktop views of the finished app. More, including phone views, will be added to the [`screenshots/`](screenshots/) folder.
 
 | Main screen | Rumble Roster |
 |---|---|
 | ![Main screen: two fighter boxes and the Fight button](screenshots/main-screen.png) | ![Rumble Roster: saved fighters as trading cards](screenshots/rumble-roster.png) |
+
+![A real fight result: the judge's verdict with an Upset! tag, and both fighters' portraits](screenshots/fight-result.png)
+
+_A real result from the live judge: a Random fight between two saved fighters, which reuses their saved portraits and calls only the judge. The underdog won this time, so the verdict carries the "Upset!" tag._
 
 <img src="screenshots/help-page.png" alt="Help page: how to play and a glossary of every screen" width="560">
 
