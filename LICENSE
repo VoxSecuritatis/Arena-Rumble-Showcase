@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2026 Vox Securitatis
+Copyright (c) 2026 Vox Securitatis / Brock Frary
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -19,3 +19,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+Acknowledgment: Arena Rumble began as a project from the course
+"Claude Code for Beginners: Thrive in the AI Era" by Aldo Pagani and Andrei
+Neagoie at ZTM Academy (https://academy.zerotomastery.io/).
